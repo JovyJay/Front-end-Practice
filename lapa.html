@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cute</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(3, 3, 3);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            animation: bounce 2s infinite, changeColor 4s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-100px);
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: green;
+            }
+            75% {
+                background-color: yellow;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">google</div>
+</body>
+</html>
